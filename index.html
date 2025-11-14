@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -14,7 +13,8 @@
     <style>
         /* --- Style Chung cho Trang Tích Hợp --- */
         .app-tab-btn {
-            @apply px-4 py-2 rounded-lg font-medium text-gray-300 transition-all duration-300;
+            @apply px-4 py-2 rounded-lg font-medium transition-all duration-300;
+            color: #ffffff; /* Đảm bảo chữ luôn trắng (thay vì dùng @apply text-white) */
         }
         .app-tab-btn:hover {
             @apply bg-gray-700 text-white;
@@ -286,7 +286,6 @@
 
             <!-- Section 1: Core Workflow -->
             <section id="workflow" class="mb-24">
-                <h2 class="text-3xl font-bold text-white text-center mb-6">Quy trình Cốt lõi</h2>
                 <p class="text-center text-lg text-gray-400 mb-12">Nắm vững 4 thao tác quản lý cơ bản (Mục 3 & 4 trong tài liệu)</p>
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -296,12 +295,12 @@
                         <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-900 text-blue-300 mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
                         </div>
-                        <h3 class="text-2xl font-semibold text-white mb-3">1. Cập nhật Loại Nội dung</h3>
-                        <p class="text-sm text-gray-400 mb-4">Giữ cho các công cụ (như Video Tương tác) của bạn luôn ở phiên bản mới nhất.</p>
+                        <h3 class="text-2xl font-semibold text-white mb-3">1. cập nhật loại nội dung</h3>
+                        <p class="text-sm text-gray-400 mb-4">giữ cho các công cụ (như video tương tác) của bạn luôn ở phiên bản mới nhất.</p>
                         <ol class="list-decimal list-inside space-y-2 text-gray-300">
-                            <li>Khi bạn ở trang <span class="font-semibold text-cyan-400">chọn loại nội dung</span> (Select content type).</li>
-                            <li>Tìm loại nội dung có dòng chữ <span class="font-semibold text-cyan-400">Update available</span> (Có bản cập nhật).</li>
-                            <li>Nhấp vào đó và chọn <span class="font-semibold text-cyan-400">Update</span> để cập nhật.</li>
+                            <li>khi bạn ở trang <span class="font-semibold text-cyan-400">chọn loại nội dung</span> (select content type).</li>
+                            <li>tìm loại nội dung có dòng chữ <span class="font-semibold text-cyan-400">Update available</span> (có bản cập nhật).</li>
+                            <li>nhấp vào đó và chọn <span class="font-semibold text-cyan-400">Update</span> để cập nhật.</li>
                         </ol>
                     </div>
 
@@ -310,12 +309,12 @@
                         <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-900 text-green-300 mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" /></svg>
                         </div>
-                        <h3 class="text-2xl font-semibold text-white mb-3">2. Tải xuống (Đóng gói)</h3>
-                        <p class="text-sm text-gray-400 mb-4">Lưu bài giảng H5P của bạn thành một tệp <span class="font-semibold text-cyan-400">.h5p</span> duy nhất để nộp bài hoặc di chuyển.</p>
+                        <h3 class="text-2xl font-semibold text-white mb-3">2. tải xuống (đóng gói)</h3>
+                        <p class="text-sm text-gray-400 mb-4">lưu bài giảng H5P của bạn thành một tệp <span class="font-semibold text-cyan-400">.h5p</span> duy nhất để nộp bài hoặc di chuyển.</p>
                         <ol class="list-decimal list-inside space-y-2 text-gray-300">
-                            <li>Mở một nội dung H5P bạn đã tạo.</li>
-                            <li>Nhấp vào nút <span class="font-semibold text-cyan-400">Reuse</span> (Tái sử dụng) ở phía dưới.</li>
-                            <li>Chọn <span class="font-semibold text-cyan-400">Download</span> (Tải xuống).</li>
+                            <li>mở một nội dung H5P bạn đã tạo.</li>
+                            <li>nhấp vào nút <span class="font-semibold text-cyan-400">Reuse</span> (tái sử dụng) ở phía dưới.</li>
+                            <li>chọn <span class="font-semibold text-cyan-400">Download</span> (tải xuống).</li>
                         </ol>
                     </div>
 
@@ -324,13 +323,13 @@
                         <div class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-900 text-purple-300 mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" /></svg>
                         </div>
-                        <h3 class="text-2xl font-semibold text-white mb-3">3. Tải tệp H5P lên</h3>
-                        <p class="text-sm text-gray-400 mb-4">Đưa một tệp <span class="font-semibold text-cyan-400">.h5p</span> (từ máy tính, hoặc người khác gửi) lên hệ thống H5P của bạn.</p>
+                        <h3 class="text-2xl font-semibold text-white mb-3">3. tải tệp H5P lên</h3>
+                        <p class="text-sm text-gray-400 mb-4">đưa một tệp <span class="font-semibold text-cyan-400">.h5p</span> (từ máy tính, hoặc người khác gửi) lên hệ thống H5P của bạn.</p>
                         <ol class="list-decimal list-inside space-y-2 text-gray-300">
-                            <li>(Bạn không thể mở file .h5p trực tiếp)</li>
-                            <li>Trong trình soạn thảo H5P, chọn tab <span class="font-semibold text-cyan-400">Upload</span>.</li>
-                            <li>Tìm tệp <span class="font-semibold text-cyan-400">.h5p</span> trên máy và tải nó lên.</li>
-                            <li>Nhấp vào <span class="font-semibold text-cyan-400">Save</span> (Lưu) để sử dụng.</li>
+                            <li>(bạn không thể mở file .h5p trực tiếp)</li>
+                            <li>trong trình soạn thảo H5P, chọn tab <span class="font-semibold text-cyan-400">Upload</span>.</li>
+                            <li>tìm tệp <span class="font-semibold text-cyan-400">.h5p</span> trên máy và tải nó lên.</li>
+                            <li>nhấp vào <span class="font-semibold text-cyan-400">Save</span> (lưu) để sử dụng.</li>
                         </ol>
                     </div>
 
@@ -339,13 +338,13 @@
                         <div class="flex items-center justify-center h-12 w-12 rounded-full bg-yellow-900 text-yellow-300 mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876V5.25a.375.375 0 00-.375-.375H5.625a.375.375 0 00-.375.375v3.375c0 .621.504 1.125 1.125 1.125h9.75A1.125 1.125 0 0115.75 17.25z" /></svg>
                         </div>
-                        <h3 class="text-2xl font-semibold text-white mb-3">4. Tái sử dụng (Copy/Paste)</h3>
-                        <p class="text-sm text-gray-400 mb-4">Sao chép một phần (như một câu hỏi) từ bài giảng này để dán vào một bài giảng khác.</p>
+                        <h3 class="text-2xl font-semibold text-white mb-3">4. tái sử dụng (copy/paste)</h3>
+                        <p class="text-sm text-gray-400 mb-4">sao chép một phần (như một câu hỏi) từ bài giảng này để dán vào một bài giảng khác.</p>
                         <ol class="list-decimal list-inside space-y-2 text-gray-300">
-                            <li>Mở nội dung H5P *nguồn* (nơi bạn muốn copy).</li>
-                            <li>Nhấp vào <span class="font-semibold text-cyan-400">Reuse</span> -> <span class="font-semibold text-cyan-400">Copy content</span>.</li>
-                            <li>Mở *trình soạn thảo* của nội dung H5P *đích* (nơi bạn muốn dán).</li>
-                            <li>Nhấp vào nút <span class="font-semibold text-cyan-400">Paste</span> (Dán) trên thanh công cụ.</li>
+                            <li>mở nội dung H5P *nguồn* (nơi bạn muốn copy).</li>
+                            <li>nhấp vào <span class="font-semibold text-cyan-400">Copy content</span>.</li>
+                            <li>mở *trình soạn thảo* của nội dung H5P *đích* (nơi bạn muốn dán).</li>
+                            <li>nhấp vào nút <span class="font-semibold text-cyan-400">Paste</span> (dán) trên thanh công cụ.</li>
                         </ol>
                     </div>
                 </div>
@@ -1263,4 +1262,3 @@
     </script>
 </body>
 </html>
-
